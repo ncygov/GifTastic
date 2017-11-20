@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Actions</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- css link -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- jquery and java links -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</head>
+<body>
+
+	<div class="container"><br>
+
+		<header class="jumbotron">
+			<h1>Action Gifs</h1>
+		</header>
+
+
+		<!-- buttons will be put here   -->
+		<div id="buttons-view"></div><br>
+
+		<!-- form  -->
+		<form class="navbar-form navbar-right" id="action-form">
+			<div class="form-group">
+				<label for="action-input"><h3>Action Gifs</h3></label>
+			</div>
+			<input type="text" id="action-input"><br>
+
+			<!-- button to add action -->
+			<input id="add-action" button type="submit" class="btn btn-deafult" value="Submit">
+		</form>
+
+		<!-- where the gifs will go -->
+		<div id="action-view" data-state="still"></div>
+
+	</div>
+
+	
+
+	
+</body>
+</html>
