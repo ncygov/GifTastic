@@ -5,27 +5,28 @@ $(document).ready(function() {
 
   //  create topics array buttons
   function renderButtons(){
-    $('#buttons-view').empty();
+    $("#buttons-view").empty();
 
     for (var i = 0; i < topics.length; i++) {
             //create all buttons
-            var a = $('<button>');
-            a.addClass('action');
-            a.attr('data-name', topics[i]);
+            var a = $("<button>");
+            a.addClass("action");
+            a.attr("data-name", topics[i]);
             a.text(topics[i]);
-            $('#buttons-view').append(a);
+            $("#buttons-view").append(a);
           }
         }    
         renderButtons();
 
 //on button click action
-$(document).on('click', '.action', function() {
+$(document).on("click", ".action", function() {
 
     //new var will log the text info  from each button
     var actions = $(this).html(); 
     // console.log(actions);
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + actions + "&api_key=dc6zaTOxFJmzC&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + actions + "&api_key=ln5GYJz5o2Vkz42gDtgwJdPKgo6BgOqN&limit=5";
+    
     // console.log(queryURL);
 
     // Creating an AJAX call for the action button
